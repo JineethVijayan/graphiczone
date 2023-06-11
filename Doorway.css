@@ -1,0 +1,421 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(6, 6, 148, 0.75), rgba(6, 6, 148, 0.75), rgba(6, 6, 148, 0.75)), url(doorway01.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.navbar {
+
+  margin: auto;
+  padding: 35px;
+  float: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content h1 {
+  color: #fcfbfa;
+  font-size: 70px;
+  margin-top: 80pxs;
+}
+
+.content p {
+  color: #fcfbfa;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #fcfbfa;
+  background: transparent;
+  color: #fcfbfa;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+
+span {
+  background-color: #39a3d8;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+
+/* center area css */
+
+.middle {
+  padding: 20px;
+  background-color: #3044a5;
+}
+
+.firstpage {
+  width: 100%;
+  height: 100vh;
+  background-image: url(school.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+
+
+.dog {
+  width: 0;
+  display: flex;
+  position: relative;
+  margin-left: 700px;
+  padding-top: 400px;
+
+}
+
+
+
+
+
+.div1 {
+  display: flex;
+  float: right;
+  margin-top: 30px;
+  position: relative;
+
+
+}
+
+.div1 .sp1 {
+
+  text-align: center;
+  visibility: hidden;
+  width: 150px;
+  height: 30px;
+  padding: 50px 5px;
+  color: black;
+  background-color: rgb(181, 154, 103);
+  border-radius: 12px;
+  margin-left: -150px;
+  margin-bottom: 250px;
+  position: absolute;
+  z-index: 1;
+}
+
+.div1:hover .sp1 {
+  visibility: visible;
+}
+
+
+/*second img  */
+
+.div2 {
+  width: 0;
+  position: relative;
+  display: flex;
+  margin-left: 200px;
+  margin-top: -300px;
+
+
+
+}
+
+.div2 .sp2 {
+  visibility: hidden;
+  width: 150px;
+  height: 30px;
+  padding: 50px 0;
+  color: black;
+  background-color: rgb(181, 154, 103);
+  border-radius: 12px;
+  margin-left: 200px;
+  margin-bottom: 300px;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+
+}
+
+.div2:hover .sp2 {
+  visibility: visible;
+}
+
+
+
+/* 2nd middle area css */
+
+.gallery {
+  padding: 20px;
+  background-color: #3044a5;
+  /* background-color:rgb(220, 83, 190) ; */
+}
+
+.secondmiddle {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto;
+  padding: 0;
+
+}
+
+.card1 {
+  background-image: url(graphic1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  transition: transform 1s;
+}
+
+.card1:hover{
+  transform: translateY(-10px);
+}
+
+.card2 {
+  background-image: url(graphic2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  transition: transform 1s;
+
+}
+
+.card2:hover{
+  transform: translateY(-10px);
+}
+
+.card3 {
+  background-image: url(graphic3.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  transition: transfom 1s;
+}
+
+.card3:hover{
+  transform: translateY(-10px);
+}
+
+.card4 {
+  background-image: url(graphic4.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  transition: transform 1s;
+}
+
+.card4:hover{
+  transform: translateY(-10px);
+}
+
+
+/* footer css */
+
+
+footer{
+  padding: 50px 100px;
+
+  width: auto;
+  height: 70vh;
+  background-color:  #3044a5 ;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+  position: relative; 
+}
+
+footer .container{
+width: 100%;
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+grid-gap: 20px;
+
+}
+footer .container .sec h2{
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .container .sec h2::before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #ffeb3b;
+}
+
+footer .container .sec p{
+  color: #fff;
+
+}
+.aboutus p{
+  line-height: 2rem;
+}
+.sci{
+  margin-top: 20px;
+  display: grid;
+}
+.sci li{
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+
+}
+
+.sci li a {
+
+  width: 48px;
+  height: 48px;
+  background: #3e56cb;
+  display: grid;
+  margin-left: 10px;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+
+}
+.sci li a:hover {
+background-color: #6380fe;
+}
+
+
+.quicklinks{
+   position: relative;
+}
+
+.quicklinks li{
+  list-style: none;
+
+}
+
+.quicklinks li a{
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+
+}
+
+.quicklinks li a:hover{
+  color: #ffeb3b;
+}
+
+.info{
+  position: relative;
+}
+
+.info li{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+.info li p:nth-child(1){
+  color: #fff;
+  font-size: 20px;
+}
+.info li p{
+  color: #fff;
+}
+.info a{
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.info a:hover{
+  color: #ffeb3b;
+}
+
+/* make responsive */
+@media (max-width:600px)
+{
+  footer{
+    padding: 40px;
+  }
+  footer.container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .quicklinks h2{
+    padding-left: 100px;
+  }
+
+  
+  
+  
+
+}
+
+
+
+
+
+
